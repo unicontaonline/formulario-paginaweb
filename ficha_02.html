@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | 02</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-image: linear-gradient(to right, rgb(165, 28, 28), rgb(140, 28, 28));
+            font-size: 12px;          
+        }
+        .box_master{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 12px;
+            width: 50%;
+            box-shadow: inset 15px, 15px, 15px rgba(255, 255, 255, 0.8);
+            display: block;
+        }
+        .box_head{
+            border-radius: 5px;
+            background-image: linear-gradient(to right, rgb(199, 99, 5), rgb(255, 163, 43));
+            padding: 25px;  
+            font-size: 16px;
+        }
+        
+        fieldset{
+            border: 2.5px solid rgb(165, 28, 28);
+        }   
+        legend{
+            padding: 5px;            
+        }
+        .inputBox{
+            position: relative;
+        }
+
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 14px;
+            width: 100%;
+            letter-spacing: 1px;
+        }
+
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -10px;
+            font-size: 10px;
+            font-style: italic;
+            color: rgb(165, 28, 28);
+            
+        }
+        #inputBox2{
+            position: relative;
+            display: inline-flex;
+            inline-size: 100px;
+        }
+                   
+    </style>
+</head>
+<body>
+    
+<div class="box_master">
+    <form action="">
+        <fieldset>
+<br>
+    <div class="box_head">            
+                <body>
+                    Formulário de Inscrição
+                    <br>
+                    <b>Evento do Teste</b>
+                    <br>
+                    01 a 18 de outubro 2022
+                    <img src="https://ii.ytimg.com/vi/zShHmtqP-iQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQFoP8E6uv9fcikZk2gGzZtKlmMg" alt="">
+                    <style>
+                        img{
+                            position: absolute;
+                            top: 3.7%;
+                            left: 70%;
+                            width: 150px;
+                            border-radius: 6px;
+                        }                                           
+                    </style>
+                </body> 
+    </div>
+<br>
+    <div class="box_body">
+               
+            <fieldset>
+                <legend><b>Informações adicionais</b></legend>
+                <br>
+                <div class="inputbox">
+                    
+                    <label for="">Estado Civil</label>
+                    <select name="estado_civil" id="estado_civil" required>
+                        <option value="em_branco"></option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="casado">Casado</option>
+                        <option value="viúvo">Viúvo</option>
+                    </select>
+
+                    <label id="inputBox2" for="conjuge">Nome do Cônjuge</label>
+                    <input type="text" name="conjuge" id="conjuge" class="inputUser">
+                    
+                <br><br>
+                    <label for="paioumae">Se for menor que 18 anos, nome do pai ou mãe</label>
+                    <input type="text" name="paioumae" id="paioumae" class="inputUser">
+
+                    <label for="telefonepaioumae">Fone</label>
+                    <input type="tel" name="telefone" id="telefonepaioumae" class="inputUser">
+                <br><br>
+                    <label for="igreja">Igreja</label>
+                    <input type="text" name="igreja" id="igreja" class="inputUser">
+
+                    <label for="líder">Líder do Setor</label>
+                    <input type="text" name="líder" id="líder" class="inputUser">
+
+                    <label for="discipulador">Discipulador</label>
+                    <input type="text" name="discipulador" id="discipulador" class="inputUser">
+                
+        <p>
+            Participa frequentemente dos cultos de celebração?
+            <input type="radio" id="sim2" name="cultos" value="sim2" required>
+            <label for="sim2">Sim</label>
+            <input type="radio" id="não2" name="cultos" value="não2" required>
+            <label for="não2">Não</label>
+        <br>       
+            Participa de alguma célula?            
+            <input type="radio" id="não3" name="células" value="não3" required>
+            <label for="não3">Não</label>
+            <input type="radio" id="sim3" name="células" value="sim3" required>
+            <label for="sim3">Sim</label>
+            <label for="">| Qual?</label>
+            <select name="célula" id="célula">
+                <option value="em_branco"></option>
+                <option value="águias">Águias</option>
+                <option value="casa_do_oleiro">Casa do Oleiro</option>
+                <option value="contemplação">Contemplação</option>
+                <option value="escolhidos">Escolhidos por Deus</option>
+            </select>
+        <br>
+            <label for="líder">Se não está fazendo parte de uma célula, quem lhe convidou?</label>
+            <input type="text" name="líder" id="líder" class="inputUser">
+        </p>  
+
+        <fieldset><b>Cite o nome de três parentes ou amigos mais chegados</b>
+        <br><p>
+            <label for="amigo1">1.</label>
+            <input type="text" name="amigo1" id="amigo1" class="inputUser" required>
+                <label for="telefone_amigo1">Fone</label>
+                <input type="tel" name="telefone" id="telefone_amigo1" class="inputUser" required>
+        <br>
+            <label for="amigo2">2.</label>
+            <input type="text" name="amigo2" id="amigo2" class="inputUser" required>
+                <label for="telefone_amigo2">Fone</label>
+                <input type="tel" name="telefone" id="telefone_amigo2" class="inputUser" required>
+        <br>
+            <label for="amigo3">3.</label>    
+            <input type="text" name="amigo3" id="amigo3" class="inputUser" required>
+                <label for="telefone_amigo3">Fone</label>
+                <input type="tel" name="telefone" id="telefone_amigo3" class="inputUser" required>
+
+        </p>        
+        </fieldset>
+            </div>
+      
+                                       
+            </fieldset>          
+    
+    <br>
+
+
+    <input type="submit" name="submit" id="submit" value="Próximo">
+
+
+
+        </form>
+    </div>
+</body>
+</html>

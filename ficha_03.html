@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário | 03</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-image: linear-gradient(to right, rgb(165, 28, 28), rgb(140, 28, 28));
+            font-size: 12px;          
+        }
+        .box_master{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -29.2%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 12px;
+            width: 65%;
+            box-shadow: inset 15px, 15px, 15px rgba(255, 255, 255, 0.8);
+            display: block;
+        }
+        .box_head{
+            border-radius: 5px;
+            background-image: linear-gradient(to right, rgb(199, 99, 5), rgb(255, 163, 43));
+            padding: 25px;  
+            font-size: 16px;
+        }
+        
+        fieldset{
+            border: 2.5px solid rgb(165, 28, 28);
+        }   
+        legend{
+            padding: 5px;            
+        }
+        .inputBox{
+            position: relative;
+        }
+
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 14px;
+            width: 100%;
+            letter-spacing: 1px;
+        }
+
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -10px;
+            font-size: 10px;
+            font-style: italic;
+            color: rgb(165, 28, 28);
+            
+        }
+        #inputBox1{
+            position: relative;
+            display: inline-flex;
+            inline-size: 450px;
+        }
+        #inputBox2{
+            position: relative;
+            display: inline-flex;
+            inline-size: 100px;
+        }
+        #inputBox3{
+            position: relative;
+            display: inline-flex;
+            inline-size: 150px;
+        }
+                   
+    </style>
+</head>
+<body>
+    
+<div class="box_master">
+    <form action="">
+        <fieldset>
+<br>
+    <div class="box_head">            
+                <body>
+                    Formulário de Inscrição
+                    <br>
+                    <b>Evento do Teste</b>
+                    <br>
+                    01 a 18 de outubro 2022
+                    <img src="https://ii.ytimg.com/vi/zShHmtqP-iQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQFoP8E6uv9fcikZk2gGzZtKlmMg" alt="">
+                    <style>
+                        img{
+                            position: absolute;
+                            top: 3.7%;
+                            left: 70%;
+                            width: 150px;
+                            border-radius: 6px;
+                        }                                           
+                    </style>
+                </body> 
+    </div>
+<br>
+    <div class="box_body">
+               
+            <fieldset>
+                <legend><b>Informações adicionais</b></legend>
+                <br>
+                <div class="inputbox">
+                    
+                    <label for="">Estado Civil</label>
+                    <select name="estado_civil" id="estado_civil" required>
+                        <option value="em_branco"></option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="casado">Casado</option>
+                        <option value="viúvo">Viúvo</option>
+                    </select>
+
+                    <input type="text" name="conjuge" id="conjuge" class="inputUser">
+                    <label for="conjuge">Nome do Cônjuge</label>
+                <br>
+                    <label for="paioumae">Se for menor que 18 anos, nome do pai ou mãe</label>
+                    <input type="text" name="paioumae" id="paioumae" class="inputUser">
+
+                    <label for="telefonepaioumae">Fone</label>
+                    <input type="tel" name="telefone" id="telefonepaioumae" class="inputUser">
+                <br>    
+                    <label for="igreja">Igreja</label>
+                    <input type="text" name="igreja" id="igreja" class="inputUser">
+
+                    <label for="líder">Líder do Setor</label>
+                    <input type="text" name="líder" id="líder" class="inputUser">
+
+                    <label for="discipulador">Discipulador</label>
+                    <input type="text" name="discipulador" id="discipulador" class="inputUser">
+                
+        <p>
+            Participa frequentemente dos cultos de celebração?
+            <input type="radio" id="sim2" name="cultos" value="sim2" required>
+            <label for="sim2">Sim</label>
+            <input type="radio" id="não2" name="cultos" value="não2" required>
+            <label for="não2">Não</label>
+        <br>       
+            Participa de alguma célula?            
+            <input type="radio" id="não3" name="células" value="não3" required>
+            <label for="não3">Não</label>
+            <input type="radio" id="sim3" name="células" value="sim3" required>
+            <label for="sim3">Sim</label>
+            <label for="">| Qual?</label>
+            <select name="célula" id="célula">
+                <option value="em_branco"></option>
+                <option value="águias">Águias</option>
+                <option value="casa_do_oleiro">Casa do Oleiro</option>
+                <option value="contemplação">Contemplação</option>
+                <option value="escolhidos">Escolhidos por Deus</option>
+            </select>
+        <br>
+            <label for="líder">Se não está fazendo parte de uma célula, quem lhe convidou?</label>
+            <input type="text" name="líder" id="líder" class="inputUser">
+        </p>  
+
+        <fieldset><b>Cite o nome de três parentes ou amigos mais chegados</b>
+        <br><p>
+            <label for="amigo1">1.</label>
+            <input type="text" name="amigo1" id="amigo1" class="inputUser" required>
+                <label for="telefone_amigo1">Fone</label>
+                <input type="tel" name="telefone" id="telefone_amigo1" class="inputUser" required>
+        <br>
+            <label for="amigo2">2.</label>
+            <input type="text" name="amigo2" id="amigo2" class="inputUser" required>
+                <label for="telefone_amigo2">Fone</label>
+                <input type="tel" name="telefone" id="telefone_amigo2" class="inputUser" required>
+        <br>
+            <label for="amigo3">3.</label>    
+            <input type="text" name="amigo3" id="amigo3" class="inputUser" required>
+                <label for="telefone_amigo3">Fone</label>
+                <input type="tel" name="telefone" id="telefone_amigo3" class="inputUser" required>
+
+        </p>        
+        </fieldset>
+            </div>
+      
+                                       
+            </fieldset>
+            
+    
+    <fieldset>
+        <legend><b>Informações de saúde</b></legend>
+        
+        <div class="inputbox">
+
+        Tem algum tipo de alergia?
+                  
+            <input type="radio" id="não4" name="alergia" value="não4" required>
+            <label for="não4">Não</label>
+            <input type="radio" id="sim4" name="alergia" value="sim4" required>
+            <label for="sim4">Sim</label>
+            <label for="alergia">| Qual?</label>
+            <input type="text" name="alergia" id="alergia" class="inputUser">
+        <br>
+
+        Faz dieta ou não pode comer algum alimento?
+                  
+            <input type="radio" id="não5" name="dieta" value="não5" required>
+            <label for="não5">Não</label>
+            <input type="radio" id="sim5" name="dieta" value="sim5" required>
+            <label for="sim5">Sim</label>
+            <label for="dieta">| Qual?</label>
+            <input type="text" name="dieta" id="dieta" class="inputUser">
+        <br>
+
+        Toma Remédio Controlado?
+                  
+            <input type="radio" id="não6" name="remedio" value="não6" required>
+            <label for="não6">Não</label>
+            <input type="radio" id="sim6" name="remedio" value="sim6" required>
+            <label for="sim6">Sim</label>
+            <label for="remedio">| Qual?</label>
+            <input type="text" name="remedio" id="remedio" class="inputUser">
+        <br>
+
+        Teve ou tem alguma doença grave?
+                  
+            <input type="radio" id="não7" name="doença" value="não7" required>
+            <label for="não7">Não</label>
+            <input type="radio" id="sim7" name="doença" value="sim7" required>
+            <label for="sim7">Sim</label>
+            <label for="doença">| Qual?</label>
+            <input type="text" name="doença" id="doença" class="inputUser">
+
+        </div>
+    </fieldset>
+
+
+
+<fieldset>
+        <legend><b>Observações Importantes!</b></legend>             
+
+    <p><b>Leia cuidadosamente as informações abaixo e assine se estiver de acordo.</b></p>
+<p>
+1. Só poderá participar do Encontro com Deus quem fizer o Pré-Encontro previamente. Isto é um pré-requisito indispensável.
+<br>
+2. A idade mínima para o Encontro com Deus é de 14 anos completos até a data do Encontro.
+<br>
+3. Mães com bebês que mamam ou de colo (0 a 2 anos) não poderão participar.
+<br>
+4. Não é permitido que crianças acompanhem suas mães no Encontro. Caso você não tenha com quem deixar seu filho (a),
+procure a coordenação do Encontro para saber da possibilidade de levá-lo.
+<br>
+5. Se o (a) encontrista for de outra igreja, a inscrição estará condicionada a vagas disponíveis, como também de uma
+autorização por escrito do seu Pastor.
+<br>
+6. O preenchimento desta ficha não garante a sua vaga, sua participação só estará confirmada mediante o pagamento de
+sua inscrição.
+</p>    
+    
+    <input type="checkbox" name="aceite" id="aceite" value="Enviar" required>
+    <label for="aceite"><b>Li as informações acima e estou ciente e de acordo</b></label>
+      
+</div>
+    </fieldset>
+    <br>
+
+
+    <input type="submit" name="submit" id="submit" value="Me inscrever">
+
+
+
+        </form>
+    </div>
+</body>
+</html>
