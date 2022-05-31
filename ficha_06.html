@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário | 03</title>
+    <title>Formulário | 06</title>
     <style>
         body{
             font-family: sans-serif;
@@ -37,36 +37,6 @@
         legend{
             padding: 5px;            
         }
-        .inputBox{
-            position: relative;
-        }
-
-        .inputUser{
-            background: none;
-            border: none;
-            border-bottom: 1px solid white;
-            outline: none;
-            color: white;
-            font-size: 14px;
-            width: 100%;
-            letter-spacing: 1px;
-        }
-
-        .labelInput{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            pointer-events: none;
-            transition: .5s;
-        }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{
-            top: -15px;
-            font-size: 11px;
-            font-style: italic;
-            color: rgb(255, 163, 43);
-            
-        }
 
         #back{
             background-image: linear-gradient(to right, rgb(199, 99, 5), rgb(255, 163, 43));
@@ -87,7 +57,7 @@
             background-image: linear-gradient(to right, rgb(179, 99, 5), rgb(235, 163, 43));
         }
 
-        #next{
+        #submit{
             background-image: linear-gradient(to right, rgb(199, 99, 5), rgb(255, 163, 43));
             width: 49.5%;
             border: none;
@@ -102,9 +72,9 @@
 
         }
 
-        #next:hover{
+        #submit:hover{
             background-image: linear-gradient(to right, rgb(179, 99, 5), rgb(235, 163, 43));
-        }     
+        }
                    
     </style>
 </head>
@@ -134,57 +104,20 @@
                 </body> 
     </div>
 <br>
-    <div class="box_body">
-               
-            <fieldset>
-                <legend><b>Cite o nome de três parentes ou amigos mais chegados</b></legend>
-                
-        <p>
-        
-        <div id="inputBox" class="inputBox">
-            <input type="text" name="amigo1" id="amigo1" class="inputUser" required>
-            <label for="amigo1" class="labelInput">Amigo 1</label>  
-        </div>          
-    <br><br>
-        <div id="inputBox" class="inputBox">
-            <input type="tel" name="telefone" id="telefone_amigo1" class="inputUser" required>
-            <label for="telefone_amigo1" class="labelInput">Fone</label>
-        </div>
-    <br><br>
-        <div id="inputBox" class="inputBox">       
-            <input type="text" name="amigo2" id="amigo2" class="inputUser" required>
-            <label for="amigo2" class="labelInput">Amigo 2</label>
-        </div>
-    <br><br>    
-        <div id="inputBox" class="inputBox">        
-            <input type="tel" name="telefone" id="telefone_amigo2" class="inputUser" required>
-            <label for="telefone_amigo2" class="labelInput">Fone</label>
-        </div>
-    <br><br>   
-        <div id="inputBox" class="inputBox">         
-            <input type="text" name="amigo3" id="amigo3" class="inputUser" required>
-            <label for="amigo3" class="labelInput">Amigo 3</label> 
-        </div>
-    <br><br>         
-        <div id="inputBox" class="inputBox">        
-            <input type="tel" name="telefone" id="telefone_amigo3" class="inputUser" required>
-            <label for="telefone_amigo3" class="labelInput">Fone</label>
-        </div>
+    <div class="box_body">    
+   
+<fieldset>
+        <legend><b>Observações Importantes!</b></legend>             
+
+    <h3><b>Leia cuidadosamente as informações abaixo e assine se estiver de acordo:</b></h3>
+
+
+    </fieldset>
     <br>
 
-        </p>        
-        </fieldset>
-            </div>
-      
-                                       
-            </fieldset>          
+    <a href="ficha_05.html"><input type="button" name="back" class="bottom" id="back" class="button" value="Voltar"></a>
     
-    <br>
-
-    <a href="ficha_02.html"><input type="button" name="back" class="bottom" id="back" class="button" value="Voltar"></a>
-    
-    <a href="ficha_04.html"><input type="button" name="next" class="bottom" id="next" class="button" value="Próximo"></a>
-
+    <input type="submit" name="submit" id="submit" value="Me inscrever">
 
 
         </form>

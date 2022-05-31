@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário | 03</title>
+    <title>Formulário | 05</title>
     <style>
         body{
             font-family: sans-serif;
@@ -35,37 +35,7 @@
             border: 2.5px solid rgb(165, 28, 28);
         }   
         legend{
-            padding: 5px;            
-        }
-        .inputBox{
-            position: relative;
-        }
-
-        .inputUser{
-            background: none;
-            border: none;
-            border-bottom: 1px solid white;
-            outline: none;
-            color: white;
-            font-size: 14px;
-            width: 100%;
-            letter-spacing: 1px;
-        }
-
-        .labelInput{
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            pointer-events: none;
-            transition: .5s;
-        }
-        .inputUser:focus ~ .labelInput,
-        .inputUser:valid ~ .labelInput{
-            top: -15px;
-            font-size: 11px;
-            font-style: italic;
-            color: rgb(255, 163, 43);
-            
+            padding: 5px;          
         }
 
         #back{
@@ -104,7 +74,7 @@
 
         #next:hover{
             background-image: linear-gradient(to right, rgb(179, 99, 5), rgb(235, 163, 43));
-        }     
+        }
                    
     </style>
 </head>
@@ -134,57 +104,40 @@
                 </body> 
     </div>
 <br>
-    <div class="box_body">
-               
-            <fieldset>
-                <legend><b>Cite o nome de três parentes ou amigos mais chegados</b></legend>
-                
-        <p>
-        
-        <div id="inputBox" class="inputBox">
-            <input type="text" name="amigo1" id="amigo1" class="inputUser" required>
-            <label for="amigo1" class="labelInput">Amigo 1</label>  
-        </div>          
-    <br><br>
-        <div id="inputBox" class="inputBox">
-            <input type="tel" name="telefone" id="telefone_amigo1" class="inputUser" required>
-            <label for="telefone_amigo1" class="labelInput">Fone</label>
-        </div>
-    <br><br>
-        <div id="inputBox" class="inputBox">       
-            <input type="text" name="amigo2" id="amigo2" class="inputUser" required>
-            <label for="amigo2" class="labelInput">Amigo 2</label>
-        </div>
-    <br><br>    
-        <div id="inputBox" class="inputBox">        
-            <input type="tel" name="telefone" id="telefone_amigo2" class="inputUser" required>
-            <label for="telefone_amigo2" class="labelInput">Fone</label>
-        </div>
-    <br><br>   
-        <div id="inputBox" class="inputBox">         
-            <input type="text" name="amigo3" id="amigo3" class="inputUser" required>
-            <label for="amigo3" class="labelInput">Amigo 3</label> 
-        </div>
-    <br><br>         
-        <div id="inputBox" class="inputBox">        
-            <input type="tel" name="telefone" id="telefone_amigo3" class="inputUser" required>
-            <label for="telefone_amigo3" class="labelInput">Fone</label>
-        </div>
-    <br>
+    <div class="box_body">    
+   
+<fieldset>
+        <legend><b>Observações Importantes!</b></legend>             
 
-        </p>        
-        </fieldset>
-            </div>
+    <h3><b>Leia cuidadosamente as informações abaixo e assine se estiver de acordo:</b></h3>
+
+
+1. Só poderá participar do Encontro com Deus quem fizer o Pré-Encontro previamente. Isto é um pré-requisito indispensável.
+<br><br>
+2. A idade mínima para o Encontro com Deus é de 14 anos completos até a data do Encontro.
+<br><br>
+3. Mães com bebês que mamam ou de colo (0 a 2 anos) não poderão participar.
+<br><br>
+4. Não é permitido que crianças acompanhem suas mães no Encontro. Caso você não tenha com quem deixar seu filho (a),
+procure a coordenação do Encontro para saber da possibilidade de levá-lo.
+<br><br>
+5. Se o (a) encontrista for de outra igreja, a inscrição estará condicionada a vagas disponíveis, como também de uma
+autorização por escrito do seu Pastor.
+<br><br>
+6. O preenchimento desta ficha não garante a sua vaga, sua participação só estará confirmada mediante o pagamento de
+sua inscrição.
+<br><br>
+    
+    <input type="checkbox" name="aceite" id="aceite" value="Enviar" required>
+    <label for="aceite"><b>Li as informações acima e estou ciente e de acordo</b></label>
       
-                                       
-            </fieldset>          
-    
+</div>
+    </fieldset>
     <br>
 
-    <a href="ficha_02.html"><input type="button" name="back" class="bottom" id="back" class="button" value="Voltar"></a>
+    <a href="ficha_04.html"><input type="button" name="back" class="bottom" id="back" class="button" value="Voltar"></a>
     
-    <a href="ficha_04.html"><input type="button" name="next" class="bottom" id="next" class="button" value="Próximo"></a>
-
+    <a href="ficha_06.html"><input type="button" name="next" class="bottom" id="next" class="button" value="Formas de Pagamento"></a>
 
 
         </form>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário | 03</title>
+    <title>Formulário | 04</title>
     <style>
         body{
             font-family: sans-serif;
@@ -66,6 +66,36 @@
             font-style: italic;
             color: rgb(255, 163, 43);
             
+            
+            
+        }
+        #inputBox1{
+            position: relative;
+            display: inline-flex;
+            inline-size: 450px;
+        }
+        #inputBox2{
+            position: relative;
+            display: inline-flex;
+            inline-size: 100px;
+        }
+        #inputBox3{
+            position: relative;
+            display: inline-flex;
+            inline-size: 150px;
+        }
+
+        #submit{
+            background-image: linear-gradient(to right, rgb(199, 99, 5), rgb(255, 163, 43));
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            text-shadow: 2px, 2px, 2px, (rgba(0, 0, 0, 0.6));
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+
         }
 
         #back{
@@ -104,7 +134,7 @@
 
         #next:hover{
             background-image: linear-gradient(to right, rgb(179, 99, 5), rgb(235, 163, 43));
-        }     
+        }
                    
     </style>
 </head>
@@ -134,57 +164,75 @@
                 </body> 
     </div>
 <br>
-    <div class="box_body">
-               
-            <fieldset>
-                <legend><b>Cite o nome de três parentes ou amigos mais chegados</b></legend>
-                
-        <p>
+    <div class="box_body">                       
+    
+    <fieldset>
+        <legend><b>Informações de saúde</b></legend>
         
-        <div id="inputBox" class="inputBox">
-            <input type="text" name="amigo1" id="amigo1" class="inputUser" required>
-            <label for="amigo1" class="labelInput">Amigo 1</label>  
-        </div>          
+        <div class="inputbox">
+
+        Tem algum tipo de alergia?
+                  
+            <input type="radio" id="não4" name="alergia" value="não4" required>
+            <label for="não4">Não</label>
+            <input type="radio" id="sim4" name="alergia" value="sim4" required>
+            <label for="sim4">Sim</label>
     <br><br>
         <div id="inputBox" class="inputBox">
-            <input type="tel" name="telefone" id="telefone_amigo1" class="inputUser" required>
-            <label for="telefone_amigo1" class="labelInput">Fone</label>
+            <input type="text" name="alergia" id="alergia" class="inputUser" required>
+            <label for="alergia" class="labelInput">Qual?</label>       
         </div>
+
+    <br>
+
+        Faz dieta ou não pode comer algum alimento?
+                  
+            <input type="radio" id="não5" name="dieta" value="não5" required>
+            <label for="não5">Não</label>
+            <input type="radio" id="sim5" name="dieta" value="sim5" required>
+            <label for="sim5">Sim</label>
     <br><br>
-        <div id="inputBox" class="inputBox">       
-            <input type="text" name="amigo2" id="amigo2" class="inputUser" required>
-            <label for="amigo2" class="labelInput">Amigo 2</label>
+        <div id="inputBox" class="inputBox">
+            <input type="text" name="dieta" id="dieta" class="inputUser" required>
+            <label for="dieta" class="labelInput">Qual?</label>
         </div>
-    <br><br>    
-        <div id="inputBox" class="inputBox">        
-            <input type="tel" name="telefone" id="telefone_amigo2" class="inputUser" required>
-            <label for="telefone_amigo2" class="labelInput">Fone</label>
+
+        <br>
+
+        Toma Remédio Controlado?
+                  
+            <input type="radio" id="não6" name="remedio" value="não6" required>
+            <label for="não6">Não</label>
+            <input type="radio" id="sim6" name="remedio" value="sim6" required>
+            <label for="sim6">Sim</label>
+    <br><br>
+        <div id="inputBox" class="inputBox">
+            <input type="text" name="remedio" id="remedio" class="inputUser" required>
+            <label for="remedio" class="labelInput">Qual?</label>   
+        </div>       
+
+        <br>
+
+        Teve ou tem alguma doença grave?
+                  
+            <input type="radio" id="não7" name="doença" value="não7" required>
+            <label for="não7">Não</label>
+            <input type="radio" id="sim7" name="doença" value="sim7" required>
+            <label for="sim7">Sim</label>
+    <br><br>
+        <div id="inputBox" class="inputBox">
+            <input type="text" name="doença" id="doença" class="inputUser" required>
+            <label for="doença" class="labelInput">Qual?</label>
         </div>
-    <br><br>   
-        <div id="inputBox" class="inputBox">         
-            <input type="text" name="amigo3" id="amigo3" class="inputUser" required>
-            <label for="amigo3" class="labelInput">Amigo 3</label> 
+
         </div>
-    <br><br>         
-        <div id="inputBox" class="inputBox">        
-            <input type="tel" name="telefone" id="telefone_amigo3" class="inputUser" required>
-            <label for="telefone_amigo3" class="labelInput">Fone</label>
-        </div>
+    </fieldset>
+
     <br>
 
-        </p>        
-        </fieldset>
-            </div>
-      
-                                       
-            </fieldset>          
+    <a href="ficha_03.html"><input type="button" name="back" class="bottom" id="back" class="button" value="Voltar"></a>
     
-    <br>
-
-    <a href="ficha_02.html"><input type="button" name="back" class="bottom" id="back" class="button" value="Voltar"></a>
-    
-    <a href="ficha_04.html"><input type="button" name="next" class="bottom" id="next" class="button" value="Próximo"></a>
-
+    <a href="ficha_05.html"><input type="button" name="next" class="bottom" id="next" class="button" value="Próximo"></a>
 
 
         </form>

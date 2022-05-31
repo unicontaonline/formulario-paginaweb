@@ -14,13 +14,13 @@
         .box_master{
             color: white;
             position: absolute;
-            top: 70%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.6);
             padding: 10px;
             border-radius: 12px;
-            width: 47%;
+            width: 50%;
             box-shadow: inset 15px, 15px, 15px rgba(255, 255, 255, 0.8);
             display: block;
         }
@@ -35,8 +35,13 @@
             border: 2.5px solid rgb(165, 28, 28);
         }   
         legend{
-            padding: 5px;            
-        }
+            padding: 5px;    
+            }
+
+        .leg_head{
+            padding: 15px;
+        }   
+
         .inputBox{
             position: relative;
         }
@@ -113,26 +118,27 @@
 <div class="box_master">
     <form action="">
         <fieldset>
+            
 <br>
-    <div class="box_head">            
-                <body>
-                    Formulário de Inscrição
-                    <br>
-                    <b>Evento do Teste</b>
-                    <br>
-                    01 a 18 de outubro 2022
-                    <img src="https://ii.ytimg.com/vi/zShHmtqP-iQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQFoP8E6uv9fcikZk2gGzZtKlmMg" alt="">
-                    <style>
-                        img{
-                            position: absolute;
-                            top: 3.7%;
-                            left: 70%;
-                            width: 150px;
-                            border-radius: 6px;
-                        }                                           
-                    </style>
-                </body> 
-    </div>
+<div class="box_head">            
+    <body>
+        Formulário de Inscrição
+        <br>
+        <b>Evento do Teste</b>
+        <br>
+        01 a 18 de outubro 2022
+        <img src="https://ii.ytimg.com/vi/zShHmtqP-iQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBQFoP8E6uv9fcikZk2gGzZtKlmMg" alt="">
+        <style>
+            img{
+                position: absolute;
+                top: 3.7%;
+                left: 70%;
+                width: 150px;
+                border-radius: 6px;
+            }                                           
+        </style>
+    </body> 
+</div>
 <br>
     <div class="box_body">
                
@@ -156,7 +162,7 @@
                     <label for="casado">Casado</label>
                 </div>
                     
-                <br><br>
+                <br>
                 
                 <div id="inputBox" class="inputBox">
                     <input type="text" name="conjuge" id="conjuge" class="inputUser" required>
@@ -197,20 +203,25 @@
                     <input type="text" name="discipulador" id="discipulador" class="inputUser" required>
                     <label for="discipulador" class="labelInput">Discipulador</label>                    
                 </div>
+
+        <br>                     
                 
         <p>
             Participa frequentemente dos cultos de celebração?
-            <input type="radio" id="sim2" name="cultos" value="sim2" required>
-            <label for="sim2">Sim</label>
             <input type="radio" id="não2" name="cultos" value="não2" required>
             <label for="não2">Não</label>
+            <input type="radio" id="sim2" name="cultos" value="sim2" required>
+            <label for="sim2">Sim</label>
+            
         <br><br>
+
             Participa de alguma célula?            
             <input type="radio" id="não3" name="células" value="não3" required>
             <label for="não3">Não</label>
             <input type="radio" id="sim3" name="células" value="sim3" required>
             <label for="sim3">Sim</label>
-            <label for=""></label>
+
+            <label for="">: </label>
             <select name="célula" id="célula">
                 <option value="em_branco"></option>
                 <option value="águias">Águias</option>
@@ -218,34 +229,19 @@
                 <option value="contemplação">Contemplação</option>
                 <option value="escolhidos">Escolhidos por Deus</option>
             </select>
+            
         <br><br>
-            <label for="líder">Se não está fazendo parte de uma célula, quem lhe convidou?</label>
-            <input type="text" name="líder" id="líder" class="inputUser">
+
+        <div id="inputBox" class="inputBox">
+            <input type="text" name="líder" id="líder" class="inputUser" required>
+            <label for="líder" class="labelInput">Se não está fazendo parte de uma célula, quem lhe convidou?</label>
+        </div>
+            
         </p>  
 
-        <fieldset><b>Cite o nome de três parentes ou amigos mais chegados</b>
-        <br><p>
-            <label for="amigo1">1.</label>
-            <input type="text" name="amigo1" id="amigo1" class="inputUser" required>
-                <label for="telefone_amigo1">Fone</label>
-                <input type="tel" name="telefone" id="telefone_amigo1" class="inputUser" required>
-        <br>
-            <label for="amigo2">2.</label>
-            <input type="text" name="amigo2" id="amigo2" class="inputUser" required>
-                <label for="telefone_amigo2">Fone</label>
-                <input type="tel" name="telefone" id="telefone_amigo2" class="inputUser" required>
-        <br>
-            <label for="amigo3">3.</label>    
-            <input type="text" name="amigo3" id="amigo3" class="inputUser" required>
-                <label for="telefone_amigo3">Fone</label>
-                <input type="tel" name="telefone" id="telefone_amigo3" class="inputUser" required>
-
-        </p>        
-        </fieldset>
-            </div>
-      
-                                       
-            </fieldset>          
+        
+    </div>                                      
+    </fieldset>          
     
     <br>
 
