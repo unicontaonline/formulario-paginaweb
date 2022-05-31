@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,13 +14,13 @@
         .box_master{
             color: white;
             position: absolute;
-            top: 50%;
+            top: 70%;
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0.6);
             padding: 10px;
             border-radius: 12px;
-            width: 50%;
+            width: 47%;
             box-shadow: inset 15px, 15px, 15px rgba(255, 255, 255, 0.8);
             display: block;
         }
@@ -61,28 +61,50 @@
         }
         .inputUser:focus ~ .labelInput,
         .inputUser:valid ~ .labelInput{
-            top: -10px;
-            font-size: 10px;
+            top: -15px;
+            font-size: 11px;
             font-style: italic;
-            color: rgb(165, 28, 28);
+            color: rgb(255, 163, 43);
             
         }
 
-        #submit{
+        #back{
             background-image: linear-gradient(to right, rgb(199, 99, 5), rgb(255, 163, 43));
-            width: 100%;
+            width: 49.5%;
             border: none;
             padding: 15px;
             color: white;
+            text-align: center;
+            text-shadow: 2px, 2px, 2px, (rgba(0, 0, 0, 0.6));
             font-size: 15px;
             cursor: pointer;
             border-radius: 5px;
+            align-items: right;
 
         }
 
-        #submit:hover{
+        #back:hover{
             background-image: linear-gradient(to right, rgb(179, 99, 5), rgb(235, 163, 43));
         }
+
+        #next{
+            background-image: linear-gradient(to right, rgb(199, 99, 5), rgb(255, 163, 43));
+            width: 49.5%;
+            border: none;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            text-shadow: 2px, 2px, 2px, (rgba(0, 0, 0, 0.6));
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            align-items: right;
+
+        }
+
+        #next:hover{
+            background-image: linear-gradient(to right, rgb(179, 99, 5), rgb(235, 163, 43));
+        }        
                    
     </style>
 </head>
@@ -118,33 +140,63 @@
                 <legend><b>Informações adicionais</b></legend>
                 <br>
                 <div class="inputbox">
-                    
-                    <label for="">Estado Civil</label>
-                    <select name="estado_civil" id="estado_civil" required>
-                        <option value="em_branco"></option>
-                        <option value="solteiro">Solteiro</option>
-                        <option value="casado">Casado</option>
-                        <option value="viúvo">Viúvo</option>
-                    </select>
 
-                    <label id="inputBox2" for="conjuge">Nome do Cônjuge</label>
-                    <input type="text" name="conjuge" id="conjuge" class="inputUser">
+                <div class="bolas">
+                    Estado Civil
+                
+                    <br><br>
+                    
+                    <input type="radio" id="solteiro" name="estadocivil" value="solteiro">
+                    <label for="solteiro">Solteiro</label>
+
+                    <input type="radio" id="viuvo" name="estadocivil" value="viuvo">
+                    <label for="viuvo">Viúvo</label>
+
+                    <input type="radio" id="casado" name="estadocivil" value="casado">
+                    <label for="casado">Casado</label>
+                </div>
                     
                 <br><br>
-                    <label for="paioumae">Se for menor que 18 anos, nome do pai ou mãe</label>
-                    <input type="text" name="paioumae" id="paioumae" class="inputUser">
-
-                    <label for="telefonepaioumae">Fone</label>
-                    <input type="tel" name="telefone" id="telefonepaioumae" class="inputUser">
+                
+                <div id="inputBox" class="inputBox">
+                    <input type="text" name="conjuge" id="conjuge" class="inputUser" required>
+                    <label for="conjuge" class="labelInput">Nome do Cônjuge</label>
+                </div> 
+                                        
                 <br><br>
-                    <label for="igreja">Igreja</label>
-                    <input type="text" name="igreja" id="igreja" class="inputUser">
+                    
+                <div id="inputBox" class="inputBox">
+                    <input type="text" name="paioumae" id="paioumae" class="inputUser" required>
+                    <label for="paioumae" class="labelInput">Se for menor que 18 anos, nome do pai ou mãe</label>
+                </div>
 
-                    <label for="líder">Líder do Setor</label>
-                    <input type="text" name="líder" id="líder" class="inputUser">
+                <br><br>
 
-                    <label for="discipulador">Discipulador</label>
-                    <input type="text" name="discipulador" id="discipulador" class="inputUser">
+                <div id="inputBox" class="inputBox">                    
+                    <input type="tel" name="telefone" id="telefonepaioumae" class="inputUser" required>
+                    <label for="telefonepaioumae" class="labelInput">Fone</label>
+                </div>
+
+                <br><br>
+
+                <div id="inputBox" class="inputBox"> 
+                    <input type="text" name="igreja" id="igreja" class="inputUser" required>
+                    <label for="igreja" class="labelInput">Igreja</label>
+                </div>
+                
+                <br><br>
+
+                <div id="inputBox" class="inputBox"> 
+                    <input type="text" name="líder" id="líder" class="inputUser" required>
+                    <label for="líder" class="labelInput">Líder do Setor</label>                    
+                </div>
+
+                <br><br>
+
+                <div id="inputBox" class="inputBox"> 
+                    <input type="text" name="discipulador" id="discipulador" class="inputUser" required>
+                    <label for="discipulador" class="labelInput">Discipulador</label>                    
+                </div>
                 
         <p>
             Participa frequentemente dos cultos de celebração?
@@ -152,13 +204,13 @@
             <label for="sim2">Sim</label>
             <input type="radio" id="não2" name="cultos" value="não2" required>
             <label for="não2">Não</label>
-        <br>       
+        <br><br>
             Participa de alguma célula?            
             <input type="radio" id="não3" name="células" value="não3" required>
             <label for="não3">Não</label>
             <input type="radio" id="sim3" name="células" value="sim3" required>
             <label for="sim3">Sim</label>
-            <label for="">| Qual?</label>
+            <label for=""></label>
             <select name="célula" id="célula">
                 <option value="em_branco"></option>
                 <option value="águias">Águias</option>
@@ -166,7 +218,7 @@
                 <option value="contemplação">Contemplação</option>
                 <option value="escolhidos">Escolhidos por Deus</option>
             </select>
-        <br>
+        <br><br>
             <label for="líder">Se não está fazendo parte de uma célula, quem lhe convidou?</label>
             <input type="text" name="líder" id="líder" class="inputUser">
         </p>  
@@ -197,8 +249,9 @@
     
     <br>
 
-
-    <input type="submit" name="submit" id="submit" value="Próximo">
+    <a href="ficha_01.html"><input type="button" name="back" class="bottom" id="back" class="button" value="Voltar"></a>
+    
+    <a href="ficha_03.html"><input type="button" name="next" class="bottom" id="next" class="button" value="Próximo"></a>
 
 
 

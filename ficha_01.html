@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,7 +20,7 @@
             background-color: rgba(0, 0, 0, 0.6);
             padding: 10px;
             border-radius: 12px;
-            width: 50%;
+            width: 45%;
             box-shadow: inset 15px, 15px, 15px rgba(255, 255, 255, 0.8);
             display: block;
         }
@@ -47,7 +47,7 @@
             border-bottom: 1px solid white;
             outline: none;
             color: white;
-            font-size: 14px;
+            font-size: 12px;
             width: 100%;
             letter-spacing: 1px;
         }
@@ -61,27 +61,29 @@
         }
         .inputUser:focus ~ .labelInput,
         .inputUser:valid ~ .labelInput{
-            top: -10px;
-            font-size: 10px;
+            top: -15px;
+            font-size: 11px;
             font-style: italic;
-            color: rgb(165, 28, 28);
+            color: rgb(255, 163, 43);
             
         }
-
-        #submit{
+        
+        #next{
             background-image: linear-gradient(to right, rgb(199, 99, 5), rgb(255, 163, 43));
             width: 100%;
             border: none;
             padding: 15px;
             color: white;
+            text-align: center;
             text-shadow: 2px, 2px, 2px, (rgba(0, 0, 0, 0.6));
             font-size: 15px;
             cursor: pointer;
             border-radius: 5px;
+            align-items: right;
 
         }
 
-        #submit:hover{
+        #next:hover{
             background-image: linear-gradient(to right, rgb(179, 99, 5), rgb(235, 163, 43));
         }
                 
@@ -119,49 +121,49 @@
                 <legend><b>Dados Pessoais</b></legend>
                 <br>
 
-                <div id="inputBox1" class="inputBox">
+                <div id="inputBox" class="inputBox">
                     <input type="text" name="name" id="name" class="inputUser" required>
                     <label for="nome" class="labelInput">Nome Completo</label>
                 </div> 
 
                 <br><br>
 
-                <div id="inputBox1" class="inputBox">
+                <div id="inputBox" class="inputBox">
                     <input type="text" name="idade" id="idade" class="inputUser" required>
                     <label for="idade" class="labelInput">Idade</label>                    
                 </div>
 
                 <br><br>
 
-                <div id="inputBox1" class="inputBox">                    
+                <div id="inputBox" class="inputBox">                    
                     <input type="text" name="rg/cpf" id="rg/cpf" class="inputUser" required>
                     <label for="rg/cpf" class="labelInput">RG/CPF</label>
                 </div>
 
                 <br><br>
 
-                <div id="inputBox1" class="inputBox">    
+                <div id="inputBox" class="inputBox">    
                     <input type="tel" name="telefone" id="telefone" class="inputUser" required>
                     <label for="telefone" class="labelInput">Fone</label>
                 </div>
 
                 <br><br>
 
-                <div id="inputBox1" class="inputBox">    
+                <div id="inputBox" class="inputBox">    
                     <input type="text" name="apelido" id="apelido" class="inputUser" required>
                     <label for="apelido" class="labelInput">Apelido</label>                  
                 </div>
 
                 <br><br>
 
-                <div id="inputBox1" class="inputBox">                    
+                <div id="inputBox" class="inputBox">                    
                     <input type="text" name="endereço" id="endereço" class="inputUser" required>
                     <label for="endereço" class="labelInput">Endereço</label>
                 </div>  
 
                 <br><br>
 
-                <div id="inputBox1" class="inputBox">      
+                <div id="inputBox" class="inputBox">      
                     <input type="text" name="numero" id="numero" class="inputUser" required>
                     <label for="numero" class="labelInput">Nº</label>                  
                 </div>
@@ -185,8 +187,7 @@
             
     <br>
 
-
-    <input type="submit" name="submit" id="submit" value="Próximo">
+    <a href="ficha_02.html"><input type="button" name="next" id="next" value="Próximo"></a>
 
 
 
